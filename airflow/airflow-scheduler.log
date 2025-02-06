@@ -1,0 +1,62 @@
+2025-02-06 16:44:30,254 INFO - Starting the scheduler
+2025-02-06 16:44:30,255 INFO - Processing each file at most -1 times
+2025-02-06 16:44:30,260 INFO - Launched DagFileProcessorManager with pid: 8031
+2025-02-06 16:44:30,267 INFO - Resetting orphaned tasks for active dag runs
+2025-02-06 16:44:30,267 INFO - Configured default timezone Timezone('UTC')
+2025-02-06 16:49:30,455 INFO - Resetting orphaned tasks for active dag runs
+2025-02-06 16:54:30,597 INFO - Resetting orphaned tasks for active dag runs
+2025-02-06 16:58:20,636 INFO - Exiting gracefully upon receiving signal 15
+2025-02-06 16:58:21,639 INFO - Sending Signals.SIGTERM to group 8031. PIDs of all processes in the group: [8031]
+2025-02-06 16:58:21,640 INFO - Sending the signal Signals.SIGTERM to group 8031
+2025-02-06 16:58:21,781 INFO - Process psutil.Process(pid=8031, status='terminated', exitcode=0, started='16:44:30') (8031) terminated with exit code 0
+2025-02-06 16:58:21,783 INFO - Sending Signals.SIGTERM to group 8031. PIDs of all processes in the group: []
+2025-02-06 16:58:21,783 INFO - Sending the signal Signals.SIGTERM to group 8031
+2025-02-06 16:58:21,783 INFO - Sending the signal Signals.SIGTERM to process 8031 as process group is missing.
+2025-02-06 16:58:21,783 INFO - Exited execute loop
+2025-02-06 16:58:34,181 INFO - Starting the scheduler
+2025-02-06 16:58:34,182 INFO - Processing each file at most -1 times
+2025-02-06 16:58:34,193 INFO - Launched DagFileProcessorManager with pid: 14364
+2025-02-06 16:58:34,197 INFO - Resetting orphaned tasks for active dag runs
+2025-02-06 16:58:34,200 INFO - Configured default timezone Timezone('UTC')
+2025-02-06 16:58:59,399 INFO - 1 tasks up for execution:
+	<TaskInstance: one_task_dag.one_task manual__2025-02-06T16:58:58.804376+00:00 [scheduled]>
+2025-02-06 16:58:59,402 INFO - DAG one_task_dag has 0/16 running and queued tasks
+2025-02-06 16:58:59,404 INFO - Setting the following tasks to queued state:
+	<TaskInstance: one_task_dag.one_task manual__2025-02-06T16:58:58.804376+00:00 [scheduled]>
+2025-02-06 16:58:59,407 INFO - Sending TaskInstanceKey(dag_id='one_task_dag', task_id='one_task', run_id='manual__2025-02-06T16:58:58.804376+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-02-06 16:58:59,408 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'one_task_dag', 'one_task', 'manual__2025-02-06T16:58:58.804376+00:00', '--local', '--subdir', 'DAGS_FOLDER/one_task_dag.py']
+2025-02-06 16:58:59,411 INFO - Executing command: ['airflow', 'tasks', 'run', 'one_task_dag', 'one_task', 'manual__2025-02-06T16:58:58.804376+00:00', '--local', '--subdir', 'DAGS_FOLDER/one_task_dag.py']
+2025-02-06 16:59:00,995 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='one_task_dag', task_id='one_task', run_id='manual__2025-02-06T16:58:58.804376+00:00', try_number=1, map_index=-1)
+2025-02-06 16:59:01,001 INFO - TaskInstance Finished: dag_id=one_task_dag, task_id=one_task, run_id=manual__2025-02-06T16:58:58.804376+00:00, map_index=-1, run_start_date=2025-02-06 16:59:00.556864+00:00, run_end_date=2025-02-06 16:59:00.665463+00:00, run_duration=0.108599, state=success, executor_state=success, try_number=1, max_tries=0, job_id=3, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-02-06 16:58:59.404781+00:00, queued_by_job_id=2, pid=14546
+2025-02-06 16:59:01,129 INFO - Marking run <DagRun one_task_dag @ 2025-02-06 16:58:58.804376+00:00: manual__2025-02-06T16:58:58.804376+00:00, state:running, queued_at: 2025-02-06 16:58:58.821476+00:00. externally triggered: True> successful
+2025-02-06 16:59:01,129 INFO - DagRun Finished: dag_id=one_task_dag, execution_date=2025-02-06 16:58:58.804376+00:00, run_id=manual__2025-02-06T16:58:58.804376+00:00, run_start_date=2025-02-06 16:58:59.331192+00:00, run_end_date=2025-02-06 16:59:01.129621+00:00, run_duration=1.798429, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-02-06 16:58:58.804376+00:00, data_interval_end=2025-02-06 16:58:58.804376+00:00, dag_hash=3e1b820a4adcc81953d03899ce23f9da
+2025-02-06 17:03:34,267 INFO - Resetting orphaned tasks for active dag runs
+2025-02-06 17:08:34,294 INFO - Resetting orphaned tasks for active dag runs
+2025-02-06 17:09:37,575 INFO - 1 tasks up for execution:
+	<TaskInstance: two_task_dag.bash_task_0 manual__2025-02-06T17:09:36.674103+00:00 [scheduled]>
+2025-02-06 17:09:37,576 INFO - DAG two_task_dag has 0/16 running and queued tasks
+2025-02-06 17:09:37,576 INFO - Setting the following tasks to queued state:
+	<TaskInstance: two_task_dag.bash_task_0 manual__2025-02-06T17:09:36.674103+00:00 [scheduled]>
+2025-02-06 17:09:37,577 INFO - Sending TaskInstanceKey(dag_id='two_task_dag', task_id='bash_task_0', run_id='manual__2025-02-06T17:09:36.674103+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2025-02-06 17:09:37,577 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'two_task_dag', 'bash_task_0', 'manual__2025-02-06T17:09:36.674103+00:00', '--local', '--subdir', 'DAGS_FOLDER/two_task_dag.py']
+2025-02-06 17:09:37,580 INFO - Executing command: ['airflow', 'tasks', 'run', 'two_task_dag', 'bash_task_0', 'manual__2025-02-06T17:09:36.674103+00:00', '--local', '--subdir', 'DAGS_FOLDER/two_task_dag.py']
+2025-02-06 17:09:39,062 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='two_task_dag', task_id='bash_task_0', run_id='manual__2025-02-06T17:09:36.674103+00:00', try_number=1, map_index=-1)
+2025-02-06 17:09:39,065 INFO - TaskInstance Finished: dag_id=two_task_dag, task_id=bash_task_0, run_id=manual__2025-02-06T17:09:36.674103+00:00, map_index=-1, run_start_date=2025-02-06 17:09:38.737687+00:00, run_end_date=2025-02-06 17:09:38.835085+00:00, run_duration=0.097398, state=success, executor_state=success, try_number=1, max_tries=0, job_id=4, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2025-02-06 17:09:37.576876+00:00, queued_by_job_id=2, pid=18418
+2025-02-06 17:09:39,094 INFO - 1 tasks up for execution:
+	<TaskInstance: two_task_dag.bash_task_1 manual__2025-02-06T17:09:36.674103+00:00 [scheduled]>
+2025-02-06 17:09:39,095 INFO - DAG two_task_dag has 0/16 running and queued tasks
+2025-02-06 17:09:39,095 INFO - Setting the following tasks to queued state:
+	<TaskInstance: two_task_dag.bash_task_1 manual__2025-02-06T17:09:36.674103+00:00 [scheduled]>
+2025-02-06 17:09:39,096 INFO - Sending TaskInstanceKey(dag_id='two_task_dag', task_id='bash_task_1', run_id='manual__2025-02-06T17:09:36.674103+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-02-06 17:09:39,096 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'two_task_dag', 'bash_task_1', 'manual__2025-02-06T17:09:36.674103+00:00', '--local', '--subdir', 'DAGS_FOLDER/two_task_dag.py']
+2025-02-06 17:09:39,098 INFO - Executing command: ['airflow', 'tasks', 'run', 'two_task_dag', 'bash_task_1', 'manual__2025-02-06T17:09:36.674103+00:00', '--local', '--subdir', 'DAGS_FOLDER/two_task_dag.py']
+2025-02-06 17:09:45,531 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='two_task_dag', task_id='bash_task_1', run_id='manual__2025-02-06T17:09:36.674103+00:00', try_number=1, map_index=-1)
+2025-02-06 17:09:45,535 INFO - TaskInstance Finished: dag_id=two_task_dag, task_id=bash_task_1, run_id=manual__2025-02-06T17:09:36.674103+00:00, map_index=-1, run_start_date=2025-02-06 17:09:40.166794+00:00, run_end_date=2025-02-06 17:09:45.281024+00:00, run_duration=5.11423, state=success, executor_state=success, try_number=1, max_tries=0, job_id=5, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-02-06 17:09:39.095526+00:00, queued_by_job_id=2, pid=18434
+2025-02-06 17:09:45,677 INFO - Marking run <DagRun two_task_dag @ 2025-02-06 17:09:36.674103+00:00: manual__2025-02-06T17:09:36.674103+00:00, state:running, queued_at: 2025-02-06 17:09:36.684913+00:00. externally triggered: True> successful
+2025-02-06 17:09:45,677 INFO - DagRun Finished: dag_id=two_task_dag, execution_date=2025-02-06 17:09:36.674103+00:00, run_id=manual__2025-02-06T17:09:36.674103+00:00, run_start_date=2025-02-06 17:09:37.549829+00:00, run_end_date=2025-02-06 17:09:45.677474+00:00, run_duration=8.127645, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-02-06 17:09:36.674103+00:00, data_interval_end=2025-02-06 17:09:36.674103+00:00, dag_hash=a09d6de304709dd5ea129fc4a5b66bc1
+2025-02-06 17:13:34,322 INFO - Resetting orphaned tasks for active dag runs
+2025-02-06 17:18:34,357 INFO - Resetting orphaned tasks for active dag runs
+2025-02-06 17:23:34,385 INFO - Resetting orphaned tasks for active dag runs
+2025-02-06 17:28:34,412 INFO - Resetting orphaned tasks for active dag runs
+2025-02-06 17:33:34,439 INFO - Resetting orphaned tasks for active dag runs
+2025-02-06 17:38:34,468 INFO - Resetting orphaned tasks for active dag runs
